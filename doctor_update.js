@@ -62,7 +62,7 @@ const updateByName = async () => {
 
   const doctor = await DoctorModel.findOne({'name': 'Dr.Moksha S'});
 
-  doctor.phone_number = '8220214426';
+  doctor.phone_number = '9220214426';
 
   const savedTrainer = await DoctorModel.findOneAndUpdate({'name': 'Dr.Moksha S'}, doctor, {new: true});
 

@@ -60,11 +60,11 @@ const deleteByName = async () => {
 
   connectToMongo();
 
-  const doctor = await DoctorModel.findOne({'name': 'Manu'});
+  const doctor = await DoctorModel.findOne({'name': 'Dr.Manu S'});
 
   doctor.phone_number = '906777555';
 
-  const savedTrainer = await DoctorModel.findOneAndDelete({'name': 'Manu'});
+  const savedTrainer = await DoctorModel.findOneAndDelete({'name': 'Dr.Manu S'});
 
   console.log('Deleted Successfully');
 
